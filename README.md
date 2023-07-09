@@ -10,9 +10,8 @@ In general, we support Alpine linux/amd64 and linux/arm64 containers.
 
 ```bash
 docker buildx create --platform linux/amd64,linux/arm64
-loving_roentgen
 ```
 
 ```bash
- docker buildx build --builder loving_roentgen --platform linux/amd64,linux/arm64 --push -t andriimartynov/openjdk:11.0.17-jre .
+ docker buildx build --builder loving_roentgen --platform linux/amd64,linux/arm64 --push -t andriimartynov/openjdk:11.0.19-jre .
 ```
