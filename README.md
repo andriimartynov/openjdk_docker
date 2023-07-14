@@ -1,6 +1,6 @@
 # Containers
 
-This repository contains the Dockerfiles for the [OpenJDK11](https://pkgs.alpinelinux.org/packages?name=openjdk11&branch=v3.17) images. These images are made available in [Docker Hub](https://hub.docker.com/r/andriimartynov/openjdk/tags).
+This repository contains the Dockerfiles for the amazoncorretto [JRE](https://hub.docker.com/_/amazoncorretto) images. These images are made available in [Docker Hub](https://hub.docker.com/r/andriimartynov/openjdk/tags).
 
 ## Supported Images
 
@@ -13,5 +13,5 @@ docker buildx create --platform linux/amd64,linux/arm64
 ```
 
 ```bash
- docker buildx build --builder loving_roentgen --platform linux/amd64,linux/arm64 --push -t andriimartynov/openjdk:11.0.19-jre .
+ docker buildx build --builder loving_roentgen --platform linux/amd64,linux/arm64 --push -t andriimartynov/openjdk:{JDK_VERSION}-jre .
 ```
